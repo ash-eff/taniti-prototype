@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #363636;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+    font-size: 10vw;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.hero-box {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    max-width: 500px;
+    height: auto;
+    background-color: #e1e1e1;
+    color: #363636;
+    padding: 10px;
+    font-size: 18px;
+    border: 4px solid #363636;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hero-box p {
+    margin: 20px;
+}
+
+#intro-text {
+    color: #363636;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #363636;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 60px;
+    text-decoration: none;
+}
+
+nav a.right {
+    float: right;
+}
+
+nav a:hover {
+    background-color: #e1e1e1;
+    color: #363636;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside {
+    flex: 40%;
+    background-color: #e1e1e1;
+    padding: 20px;
+}
+
+aside h2 {
+    text-align: center;
+    border-style: solid;
+}
+
+section {
+    flex: 60%;
+    background-color: #aba8a9;
+    padding: 20px;
+}
+
+section p {
+    font-size: 24px;
+}
+
+section h1 {
+    text-align: center;
+}
+
+section img {
+    float: right;
+    width: 40%;
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+figure {
+    font-size: 12px;
+    text-align: center;
+}
+
+footer {
+    color: #363636;
+    background-color: #e1e1e1;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
